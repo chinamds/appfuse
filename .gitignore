@@ -1,0 +1,15 @@
+.idea
+.project
+.classpath
+target
+*.log
+*.iml
+*.iws
+*.ipr
+web/tapestry/src/main/webapp/WEB-INF/app*.properties
+web/wicket/src/main/webapp/WEB-INF/app*.properties
+web/tapestry/build
+web/wicket/src/main/webapp/styles/style.css
+.gradle/
+.svn/
+.settings/
