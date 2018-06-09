@@ -31,7 +31,7 @@
     <scm>
         <connection>scm:git:git@github.com:chinamds/appfuse.git</connection>
         <developerConnection>scm:git:git@github.com:chinamds/appfuse.git</developerConnection>
-        <url>https://github.com/chinamds/appfuse/</url>
+        <url>https://github.com/chinamds/appfuse</url>
         <tag>HEAD</tag>
     </scm>
 

@@ -71,8 +71,8 @@ public class SubversionUtils {
 
     public void export() throws SVNException {
         SVNURL url = SVNURL.parseURIEncoded(this.url);
-        String userName = "John";
-        String userPassword = "lan0921";
+        String userName = "guest";
+        String userPassword = "guest_123";
 
         /*
          * Prepare filesystem directory (export destination).

@@ -24,7 +24,7 @@
     <scm>
         <connection>scm:git:git@github.com:appfuse/appfuse.git</connection>
         <developerConnection>scm:git:git@github.com:appfuse/appfuse.git</developerConnection>
-        <url>http://source.appfuse.org/browse/appfuse/plugins</url>
+        <url>https://github.com/chinamds/appfuse/plugins</url>
         <tag>HEAD</tag>
     </scm>
 
