@@ -1,6 +1,13 @@
 ## AppFuse
 [AppFuse][] is a full-stack framework for building web applications on the JVM. Rather than re-inventing the wheel, it integrates some of the most popular frameworks today, including Spring, Hibernate, Maven, jQuery and Twitter Bootstrap.
 
+I update spring and  Hibernate, change appfuse-basic-spring and appfuse-modular-spring to adapt it:
+	<parent>
+        <groupId>io.spring.platform</groupId>
+        <artifactId>platform-bom</artifactId>
+        <version>Cairo-RELEASE</version>
+    </parent> 
+
 To create a new application with AppFuse, see the [QuickStart Guide][].
 
 To learn more about this project, subscribe to our [mailing lists][] or read the [latest news][].
