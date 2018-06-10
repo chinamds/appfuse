@@ -5,6 +5,7 @@ import org.tmatesoft.svn.core.SVNErrorCode;
 import org.tmatesoft.svn.core.SVNErrorMessage;
 import org.tmatesoft.svn.core.SVNException;
 import org.tmatesoft.svn.core.SVNNodeKind;
+import org.tmatesoft.svn.core.SVNPropertyValue;
 import org.tmatesoft.svn.core.SVNURL;
 import org.tmatesoft.svn.core.auth.ISVNAuthenticationManager;
 import org.tmatesoft.svn.core.internal.io.dav.DAVRepositoryFactory;
@@ -71,8 +72,8 @@ public class SubversionUtils {
 
     public void export() throws SVNException {
         SVNURL url = SVNURL.parseURIEncoded(this.url);
-        String userName = "guest";
-        String userPassword = "guest_123";
+        String userName = "anonymous";
+        String userPassword = "anonymous";
 
         /*
          * Prepare filesystem directory (export destination).
@@ -330,7 +331,7 @@ public class SubversionUtils {
          * like to store the result of delta application.
          */
         public void applyTextDelta(String path, String baseChecksum) throws SVNException {
-            myDeltaProcessor.applyTextDelta(null, new File(myRootDirectory, path), false);
+            myDeltaProcessor.applyTextDelta((File)null, new File(myRootDirectory, path), false);
         }
 
         /*
@@ -400,6 +401,19 @@ public class SubversionUtils {
          */
         public void abortEdit() throws SVNException {
         }
+
+		@Override
+		public void changeDirProperty(String name, SVNPropertyValue value) throws SVNException {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void changeFileProperty(String path, String propertyName, SVNPropertyValue propertyValue)
+				throws SVNException {
+			// TODO Auto-generated method stub
+			
+		}
     }
 
     /*

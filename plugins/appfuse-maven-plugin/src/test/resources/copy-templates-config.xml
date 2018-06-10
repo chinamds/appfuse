@@ -7,8 +7,8 @@
                 <artifactId>appfuse-maven-plugin</artifactId>
                 <configuration>
                     <templateDirectory>target/templates/src/test/resources/appfuse</templateDirectory>
-                    <trunk>https://s2001-server:8880/svn/appfuse/</trunk>
-                    <tag>appfuse/</tag>
+                    <trunk>https://github.com/chinamds/appfuse/</trunk>
+                    <tag>trunk/</tag>
                 </configuration>
             </plugin>
         </plugins>
