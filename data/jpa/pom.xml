@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.appfuse</groupId>
         <artifactId>appfuse-data</artifactId>
-        <version>3.5.1-SNAPSHOT</version>
+        <version>4.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>appfuse-jpa</artifactId>
@@ -18,8 +18,8 @@
     </description>
 
     <scm>
-        <connection>scm:git:git@github.com:appfuse/appfuse.git</connection>
-        <developerConnection>scm:git:git@github.com:appfuse/appfuse.git</developerConnection>
+        <connection>scm:git:git@github.com:chinamds/appfuse.git</connection>
+        <developerConnection>scm:git:git@github.com:chinamds/appfuse.git</developerConnection>
         <url>https://github.com/chinamds/appfuse/data/hibernate</url>
         <tag>HEAD</tag>
     </scm>

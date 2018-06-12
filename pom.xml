@@ -7,7 +7,7 @@
     <artifactId>appfuse</artifactId>
     <packaging>pom</packaging>
     <name>AppFuse</name>
-    <version>3.5.1-SNAPSHOT</version>
+    <version>4.0.0-SNAPSHOT</version>
     <inceptionYear>2003</inceptionYear>
     <description>
         AppFuse is a full-stack framework for building web applications on the JVM.
@@ -524,12 +524,12 @@
         <repository>
             <id>appfuse-releases</id>
             <name>AppFuse Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <url>http://www.mmdsplus.com:8081/artifactory/libs-release-local/appfuse</url>
         </repository>
         <snapshotRepository>
             <id>appfuse-snapshots</id>
             <name>AppFuse Snapshot Repository</name>
-            <url>https://oss.sonatype.org/content/repositories/appfuse-snapshots</url>
+            <url>http://www.mmdsplus.com:8081/artifactory/libs-snapshot-local/appfuse-snapshots</url>
         </snapshotRepository>
         <site>
             <id>appfuse-site</id>
@@ -549,7 +549,7 @@
     <repositories>
         <repository>
             <id>appfuse-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/appfuse-snapshots</url>
+            <url>http://www.mmdsplus.com:8081/artifactory/libs-snapshot-local/appfuse-snapshots</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -562,7 +562,7 @@
     <pluginRepositories>
         <pluginRepository>
             <id>appfuse-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/appfuse-snapshots</url>
+            <url>http://www.mmdsplus.com:8081/artifactory/libs-snapshot-local/appfuse-snapshots</url>
             <releases>
                 <enabled>false</enabled>
             </releases>

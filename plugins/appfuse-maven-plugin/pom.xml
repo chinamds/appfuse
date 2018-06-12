@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.appfuse.plugins</groupId>
         <artifactId>appfuse-plugins</artifactId>
-        <version>3.5.1-SNAPSHOT</version>
+        <version>4.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>appfuse-maven-plugin</artifactId>
@@ -18,8 +18,8 @@
     </prerequisites>
 
     <scm>
-        <connection>scm:git:git@github.com:appfuse/appfuse.git</connection>
-        <developerConnection>scm:git:git@github.com:appfuse/appfuse.git</developerConnection>
+        <connection>scm:git:git@github.com:chinamds/appfuse.git</connection>
+        <developerConnection>scm:git:git@github.com:chinamds/appfuse.git</developerConnection>
         <url>https://github.com/chinamds/appfuse/plugins/appfuse-maven-plugin</url>
         <tag>HEAD</tag>
     </scm>
@@ -46,7 +46,7 @@
         <site>
             <id>appfuse-plugins</id>
             <name>AppFuse Plugins Site</name>
-            <url>scp://static.appfuse.org/var/www/appfuse-site/plugins/appfuse-maven-plugin</url>
+            <url>http://www.mmdsplus.com:8081/artifactory/libs-release-local/appfuse-site/plugins/appfuse-maven-plugin</url>
         </site>
     </distributionManagement>
 
@@ -247,7 +247,7 @@
                                         <argument>-DartifactId=myproject</argument>
                                         <!-- probably not needed as the archetype has been installed previously by the build -->
                                         <argument>
-                                            -DarchetypeRepository=https://oss.sonatype.org/content/repositories/appfuse
+                                            -DarchetypeRepository=http://www.mmdsplus.com:8081/artifactory/libs-release/appfuse
                                         </argument>
                                     </arguments>
                                     <workingDirectory>${project.build.directory}/it/myproject</workingDirectory>

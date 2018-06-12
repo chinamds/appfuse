@@ -12,13 +12,13 @@
     <parent>
         <groupId>org.appfuse</groupId>
         <artifactId>appfuse</artifactId>
-        <version>3.5.1-SNAPSHOT</version>
+        <version>4.0.0-SNAPSHOT</version>
     </parent>
 
     <repositories>
         <repository>
             <id>appfuse-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/appfuse-snapshots</url>
+            <url>http://www.mmdsplus.com:8081/artifactory/libs-snapshot-local/appfuse-snapshots</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -106,7 +106,7 @@
         <db.name>${artifactId.replaceAll('-','_')}</db.name>
 
         <!-- Framework/Plugin versions -->
-        <appfuse.version>3.5.1-SNAPSHOT</appfuse.version>
+        <appfuse.version>4.0.0-SNAPSHOT</appfuse.version>
         <java.version>1.8</java.version>
     </properties>
 </project>

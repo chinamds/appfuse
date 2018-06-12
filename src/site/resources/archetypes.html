@@ -72,7 +72,7 @@
         <span title="Project Name">&nbsp;(?)</span><br/>
         <label for="version" title="AppFuse Version">Version:</label>
         <select id="version" onchange="changeIt();">
-            <option value="3.5.1-SNAPSHOT">3.5.1-SNAPSHOT</option>
+            <option value="4.0.0-SNAPSHOT">4.0.0-SNAPSHOT</option>
             <option value="3.5.0" selected="selected">3.5.0</option>
             <option value="3.0.0">3.0.0</option>
             <option value="2.2.1">2.2.1</option>
@@ -119,7 +119,7 @@
             //console.log('version: ' + parseFloat(version.substring(0,3)));
             if (version.match(/.*SNAPSHOT/) || parseFloat(version.substring(0,3)) >= 2.1) archetypeArtifactId += "-archetype";
             var cmd = 'mvn archetype:generate -B -DarchetypeGroupId=org.appfuse.archetypes -DarchetypeArtifactId=' + archetypeArtifactId + ' -DarchetypeVersion=' + version + ' -DgroupId=' + groupId + ' -DartifactId=' + artifactId;
-            cmd += ' -DarchetypeRepository=https://oss.sonatype.org/content/repositories/appfuse';
+            cmd += ' -DarchetypeRepository=http://www.mmdsplus.com:8081/artifactory/libs-release/appfuse';
             document.getElementById("cmdLine").value = cmd;
         }
 

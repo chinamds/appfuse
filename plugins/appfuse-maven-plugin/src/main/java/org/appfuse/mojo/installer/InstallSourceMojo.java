@@ -70,7 +70,7 @@ public class InstallSourceMojo extends AbstractMojo {
     /**
      * The directory containing the source code.
      *
-     * @parameter expression="${appfuse.trunk}" default-value="https://github.com/appfuse/appfuse/"
+     * @parameter expression="${appfuse.trunk}" default-value="https://github.com/chinamds/appfuse/"
      */
     private String trunk;
 
@@ -183,7 +183,7 @@ public class InstallSourceMojo extends AbstractMojo {
                 renameFile(dest, orig);
             }
 
-            log("Source successfully imported!");
+            log("Source successfully imported! appfuseVersion:" + appfuseVersion);
         }
 
         if (modular) {
@@ -221,8 +221,8 @@ public class InstallSourceMojo extends AbstractMojo {
                     "<version>$1appfuse.version}</version>\n            <type>pom</type>");
 
                 // modify hibernate4-plugin to exclude dependency scan
-                pom = pom.replaceAll("<artifactId>hibernate4-maven-plugin</artifactId>\n" +
-                    "                <configuration>", "<artifactId>hibernate4-maven-plugin</artifactId>\n" +
+                pom = pom.replaceAll("<artifactId>hibernate-maven-plugin</artifactId>\n" +
+                    "                <configuration>", "<artifactId>hibernate-maven-plugin</artifactId>\n" +
                     "                <configuration>\n" +
                     "                    <scanDependencies>none</scanDependencies>");
 
@@ -239,8 +239,8 @@ public class InstallSourceMojo extends AbstractMojo {
                 pom = pom.replaceAll("appfuse-hibernate", "*");
 
                 // modify hibernate4-plugin to exclude dependency scan
-                pom = pom.replaceAll("<artifactId>hibernate4-maven-plugin</artifactId>",
-                    "<artifactId>hibernate4-maven-plugin</artifactId>\n" +
+                pom = pom.replaceAll("<artifactId>hibernate-maven-plugin</artifactId>", 
+                    "<artifactId>hibernate-maven-plugin</artifactId>\n" +
                         "                <configuration>\n                    " +
                         "                    <scanDependencies>none</scanDependencies>\n" +
                         "                </configuration>");
@@ -255,13 +255,13 @@ public class InstallSourceMojo extends AbstractMojo {
                 String pom = FileUtils.readFileToString(new File("pom.xml"), "UTF-8");
                 // modify hibernate4-plugin to exclude dependency scan
                 if (project.getPackaging().equals("jar")) {
-                    pom = pom.replaceAll("<artifactId>hibernate4-maven-plugin</artifactId>\n" +
-                        "                <configuration>", "<artifactId>hibernate4-maven-plugin</artifactId>\n" +
+                    pom = pom.replaceAll("<artifactId>hibernate-maven-plugin</artifactId>\n" +
+                        "                <configuration>", "<artifactId>hibernate-maven-plugin</artifactId>\n" +
                         "                <configuration>\n" +
                         "                    <scanDependencies>none</scanDependencies>");
                 } else {
-                    pom = pom.replaceAll("<artifactId>hibernate4-maven-plugin</artifactId>",
-                        "<artifactId>hibernate4-maven-plugin</artifactId>\n" +
+                    pom = pom.replaceAll("<artifactId>hibernate-maven-plugin</artifactId>",
+                        "<artifactId>hibernate-maven-plugin</artifactId>\n" +
                         "                <configuration>\n" +
                         "                    <scanDependencies>none</scanDependencies>\n" +
                         "                </configuration>");
@@ -278,7 +278,7 @@ public class InstallSourceMojo extends AbstractMojo {
                 pom = adjustLineEndingsForOS(pom);
                 FileUtils.writeStringToFile(new File("pom.xml"), pom, "UTF-8");
             } catch (IOException io) {
-                getLog().error("Failed to add <scanDependencies>none</scanDependencies> to hibernate4-maven-plugin. " +
+                getLog().error("Failed to add <scanDependencies>none</scanDependencies> to hibernate-maven-plugin. " +
                     "Please make this change manually.");
             }
         }

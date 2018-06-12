@@ -20,21 +20,21 @@
     <parent>
         <groupId>org.appfuse.archetypes</groupId>
         <artifactId>appfuse-archetypes</artifactId>
-        <version>3.5.1-SNAPSHOT</version>
+        <version>4.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>appfuse-basic-tapestry</artifactId>
     <name>AppFuse Basic Archetype - Tapestry</name>
     <packaging>pom</packaging>
-    <version>3.5.1-SNAPSHOT</version>
+    <version>4.0.0-SNAPSHOT</version>
 
     <description>
         Maven 2 project that creates the AppFuse Basic Tapestry Archetype.
     </description>
 
     <scm>
-        <connection>scm:git:git@github.com:appfuse/appfuse.git</connection>
-        <developerConnection>scm:git:git@github.com:appfuse/appfuse.git</developerConnection>
+        <connection>scm:git:git@github.com:chinamds/appfuse.git</connection>
+        <developerConnection>scm:git:git@github.com:chinamds/appfuse.git</developerConnection>
         <url>https://github.com/chinamds/appfuse/archetypes/appfuse-basic-tapestry</url>
         <tag>HEAD</tag>
     </scm>
