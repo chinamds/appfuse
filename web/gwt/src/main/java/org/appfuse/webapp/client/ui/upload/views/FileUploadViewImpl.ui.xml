@@ -30,10 +30,10 @@
                 
 			<b:FormActions>
 				<g:SubmitButton ui:field="uploadButton" styleName="btn btn-primary">
-					<i class="icon-upload icon-white"></i> <ui:text from="{i18n.button_upload}" />
+					<i class="fa fa-upload icon-white"></i> <ui:text from="{i18n.button_upload}" />
 				</g:SubmitButton>
 				<g:Button ui:field="cancelButton" styleName="btn">
-					<i class="icon-remove"></i> <ui:text from="{i18n.button_cancel}" />
+					<i class="fa fa-times"></i> <ui:text from="{i18n.button_cancel}" />
 				</g:Button>
 			</b:FormActions>
 		</b:WellForm>

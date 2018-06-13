@@ -62,17 +62,17 @@
 </#foreach>
         <div class="form-group">
             <button type="submit" class="btn btn-primary" name="save" id="save">
-                <i class="icon-ok icon-white"></i> <fmt:message key="button.save"/>
+                <i class="fa fa-check icon-white"></i> <fmt:message key="button.save"/>
             </button>
 
             <c:if test="${'$'}{not empty param.${idFieldName}}">
                 <button type="submit" class="btn btn-danger" name="delete" id="delete">
-                    <i class="icon-trash"></i> <fmt:message key="button.delete"/>
+                    <i class="fa fa-trash"></i> <fmt:message key="button.delete"/>
                 </button>
             </c:if>
 
             <a href="${'$'}{ctx}/${util.getPluralForWord(pojoNameLower)}" class="btn btn-default" id="cancel">
-                <i class="icon-remove"></i> <fmt:message key="button.cancel"/>
+                <i class="fa fa-times"></i> <fmt:message key="button.cancel"/>
             </a>
         </div>
     </stripes:form>

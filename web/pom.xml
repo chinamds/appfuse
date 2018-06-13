@@ -299,6 +299,14 @@
             <groupId>org.webjars</groupId>
             <artifactId>bootswatch-spacelab</artifactId>
         </dependency>
+        <dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>font-awesome</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.webjars.bowergithub.wenzhixin</groupId>
+		    <artifactId>bootstrap-table</artifactId>
+		</dependency>
         <!-- Necessary for Log4j2 to work at runtime with Velocity -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>

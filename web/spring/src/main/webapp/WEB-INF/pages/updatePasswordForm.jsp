@@ -44,7 +44,7 @@
 	    
 	    <div class="form-group">
 		    <button type="submit" class="btn btn-large btn-primary">
-		        <i class="icon-ok icon-white"></i> <fmt:message key='updatePassword.changePasswordButton'/>
+		        <i class="fa fa-check icon-white"></i> <fmt:message key='updatePassword.changePasswordButton'/>
 		    </button>
 	    </div>
 	</form>

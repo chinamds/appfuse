@@ -13,13 +13,13 @@
             <t:beaneditor t:id="${pojoNameLower}" object="${pojoNameLower}" exclude="${pojo.identifierProperty.name}"/>
 
             <div class="t-beaneditor-row form-group" style="text-align: center">
-                <button type="submit" id="save" class="btn btn-primary"><i class="icon-ok icon-white"></i> ${'$'}{message:button.save}</button>
+                <button type="submit" id="save" class="btn btn-primary"><i class="fa fa-check icon-white"></i> ${'$'}{message:button.save}</button>
                 <t:if test="person.id">
                 <button t:type="eventlink" t:id="delete" id="delete" class="btn btn-danger" onclick="return confirmDelete('${pojo.shortName}')">
-                    <i class="icon-trash"></i> ${'$'}{message:button.delete}
+                    <i class="fa fa-trash"></i> ${'$'}{message:button.delete}
                 </button>
                 </t:if>
-                <button t:type="eventlink" t:id="cancel" id="cancel" class="btn btn-default"><i class="icon-remove"></i> ${'$'}{message:button.cancel}</button>
+                <button t:type="eventlink" t:id="cancel" id="cancel" class="btn btn-default"><i class="fa fa-times"></i> ${'$'}{message:button.cancel}</button>
             </div>
         </div>
     </form>

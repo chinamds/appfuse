@@ -61,7 +61,7 @@ Integration with Bootstrap and AppFuse 2.2
  - take a look on some nice looking classes available in wicket-bootstrap library
  - why empty wicket:message from <title> is rendered inside body (and by the way breaks layout on "Current User" page) - OBSOLETE
  - sync localized messages with upstream - DONE
- - icons on button - <a><i class="icon-plus icon-white"></i> Add</a> - DONE
+ - icons on button - <a><i class="fa fa-plus icon-white"></i> Add</a> - DONE
  - collapsible address section - DONE
  - input inside label for "Account Settings" - a new component? - 3.0?
  - add placeholder and required behavior to TextField on UserEditPanel (a new component?) - DONE

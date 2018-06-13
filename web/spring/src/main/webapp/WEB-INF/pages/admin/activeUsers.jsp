@@ -13,7 +13,7 @@
 
     <div id="actions" class="form-group">
         <a href="${ctx}/home" class="btn btn-primary">
-            <i class="icon-ok icon-white"></i> <fmt:message key="button.done"/></a>
+            <i class="fa fa-check icon-white"></i> <fmt:message key="button.done"/></a>
     </div>
 
     <display:table name="applicationScope.userNames" id="user" cellspacing="0" cellpadding="0"

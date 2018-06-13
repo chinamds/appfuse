@@ -22,7 +22,7 @@
                placeholder="<fmt:message key="search.enterTerms"/>" class="form-control input-sm"/>
     </span>
     <button id="button.search" class="btn btn-default btn-sm" type="submit">
-        <i class="icon-search"></i> <fmt:message key="button.search"/>
+        <i class="fa fa-search"></i> <fmt:message key="button.search"/>
     </button>
 </div>
 </form>
@@ -31,8 +31,8 @@
 
 <div id="actions" class="btn-group">
     <a href='<c:url value="/${pojoNameLower}form"/>' class="btn btn-primary">
-        <i class="icon-plus icon-white"></i> <fmt:message key="button.add"/></a>
-    <a href='<c:url value="/home"/>' class="btn btn-default"><i class="icon-ok"></i> <fmt:message key="button.done"/></a>
+        <i class="fa fa-plus icon-white"></i> <fmt:message key="button.add"/></a>
+    <a href='<c:url value="/home"/>' class="btn btn-default"><i class="fa fa-check"></i> <fmt:message key="button.done"/></a>
 </div>
 
 <display:table name="${pojoNameLower}List" class="table table-condensed table-striped table-hover" requestURI="" id="${pojoNameLower}List" export="true" pagesize="25">

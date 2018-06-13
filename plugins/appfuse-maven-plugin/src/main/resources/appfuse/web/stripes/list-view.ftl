@@ -10,10 +10,10 @@
 
 <div id="actions" class="btn-group">
     <a class="btn btn-primary" href="<c:url value='/${pojoNameLower}form'/>" >
-        <i class="icon-plus icon-white"></i> <fmt:message key="button.add"/>
+        <i class="fa fa-plus icon-white"></i> <fmt:message key="button.add"/>
     </a>
     <a class="btn btn-default" href="<c:url value="/"/>" >
-        <i class="icon-ok"></i> <fmt:message key="button.done"/></a>
+        <i class="fa fa-check"></i> <fmt:message key="button.done"/></a>
 </div>
 
 <display:table name="actionBean.${util.getPluralForWord(pojoNameLower)}" class="table table-condensed table-striped table-hover" requestURI="" id="${pojoNameLower}List" export="true" pagesize="25">

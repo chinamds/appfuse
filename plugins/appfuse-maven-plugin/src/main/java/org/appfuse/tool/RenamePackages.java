@@ -953,7 +953,7 @@ public class RenamePackages {
                     + "]");
         }
     }
-
+    
     /**
      * This method changes paths and package names in the given file
      */
@@ -995,6 +995,24 @@ public class RenamePackages {
             log.error("IOException when renaming other files [" + e.getMessage() + "]");
         }
     }
+    
+    private void renameMETAFiles() {
+        if (debug) {
+            log.debug("Inside renameMETAFiles");
+        }
+        
+        String fileName = this.workBaseDir + File.separator + "main/resources/META-INF/services/org.hibernate.boot.spi.SessionFactoryBuilderFactory";
+        File aFile = new File(fileName);
+        if (aFile.exists()) {
+        	try {
+				changePackageNamesInFile(fileName,
+				        RenamePackages.SAVE_FILE);
+			} catch (IOException e) {
+				log.error("IOException when renaming META files [" + e.getMessage() + "]");
+			}
+        }
+    }
+
 
     /**
      * This method removes directory structures
@@ -1093,6 +1111,12 @@ public class RenamePackages {
 
             if (debug) {
                 log.info("Rename other files");
+            }
+            
+            renameMETAFiles();
+            
+            if (debug) {
+                log.info("Rename META files");
             }
 
             // fix files with qualified names other than old package

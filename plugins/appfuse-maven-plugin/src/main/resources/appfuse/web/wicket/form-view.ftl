@@ -54,15 +54,15 @@
     </#foreach>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary" id="save" wicket:id="save">
-                    <i class="icon-ok icon-white"></i> <wicket:message key="button.save">Save</wicket:message>
+                    <i class="fa fa-check icon-white"></i> <wicket:message key="button.save">Save</wicket:message>
                 </button>
 
                 <button type="submit" class="btn btn-danger" id="delete" wicket:id="delete">
-                    <i class="icon-trash"></i> <wicket:message key="button.delete">Delete</wicket:message>
+                    <i class="fa fa-trash"></i> <wicket:message key="button.delete">Delete</wicket:message>
                 </button>
 
                 <a href="${util.getPluralForWord(pojoNameLower)}" class="btn btn-default" wicket:id="cancel">
-                    <i class="icon-remove"></i> <wicket:message key="button.cancel">Cancel</wicket:message>
+                    <i class="fa fa-times"></i> <wicket:message key="button.cancel">Cancel</wicket:message>
                 </a>
             </div>
         </form>

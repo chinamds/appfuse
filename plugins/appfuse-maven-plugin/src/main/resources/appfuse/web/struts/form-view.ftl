@@ -49,16 +49,16 @@
 
         <div class="form-group">
             <s:submit type="button" id="save" cssClass="btn btn-primary" method="save" key="button.save" theme="simple">
-                <i class="icon-ok icon-white"></i> <fmt:message key="button.save"/>
+                <i class="fa fa-check icon-white"></i> <fmt:message key="button.save"/>
             </s:submit>
             <c:if test="${'$'}{not empty ${pojoNameLower}.${idFieldName}}">
                 <s:submit type="button" id="delete" cssClass="btn btn-danger" method="delete" key="button.delete"
                     onclick="return confirmMessage(msgDelConfirm)" theme="simple">
-                    <i class="icon-trash icon-white"></i> <fmt:message key="button.delete"/>
+                    <i class="fa fa-trash icon-white"></i> <fmt:message key="button.delete"/>
                 </s:submit>
             </c:if>
             <a href="${'$'}{ctx}/${util.getPluralForWord(pojoNameLower)}" class="btn btn-default">
-                <i class="icon-remove"></i> <fmt:message key="button.cancel"/></a>
+                <i class="fa fa-times"></i> <fmt:message key="button.cancel"/></a>
         </div>
     </s:form>
 </div>

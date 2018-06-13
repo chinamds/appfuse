@@ -141,9 +141,9 @@
 			</b:ControlGroup>	
 		
 			<b:FormActions>
-				<b:Button ui:field="saveButton" styleName="btn btn-primary" customIconStyle="icon-ok icon-white" text="{i18n.button_save}" />
-				<b:Button ui:field="deleteButton" styleName="btn btn-default" customIconStyle="icon-trash" text="{i18n.button_delete}" />
-				<b:Button ui:field="cancelButton" styleName="btn btn-default" customIconStyle="icon-remove" text="{i18n.button_cancel}" />
+				<b:Button ui:field="saveButton" styleName="btn btn-primary" customIconStyle="fa fa-check icon-white" text="{i18n.button_save}" />
+				<b:Button ui:field="deleteButton" styleName="btn btn-default" customIconStyle="fa fa-trash" text="{i18n.button_delete}" />
+				<b:Button ui:field="cancelButton" styleName="btn btn-default" customIconStyle="fa fa-times" text="{i18n.button_cancel}" />
 			</b:FormActions>
 		
 		</b:Form>

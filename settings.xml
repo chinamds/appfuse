@@ -9,7 +9,7 @@
         <server>
             <id>appfuse-snapshots</id>
             <username>appfuse-deployer</username>
-            <password>appfuse</password>
+            <password>XXX</password>
         </server>
     </servers>
 </settings>

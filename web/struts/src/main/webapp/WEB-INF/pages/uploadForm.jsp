@@ -15,12 +15,12 @@
         <s:file name="file" label="%{getText('uploadForm.file')}" required="true"/>
         <div id="actions" class="form-group">
             <s:submit type="button" key="button.upload" name="upload" cssClass="btn btn-primary" theme="simple">
-                <i class="icon-upload icon-white"></i>
+                <i class="fa fa-upload icon-white"></i>
                 <fmt:message key="button.upload"/>
             </s:submit>
 
             <a class="btn btn-default" href="home" >
-                <i class="icon-remove"></i>
+                <i class="fa fa-times"></i>
                 <fmt:message key="button.cancel"/>
             </a>
         </div>

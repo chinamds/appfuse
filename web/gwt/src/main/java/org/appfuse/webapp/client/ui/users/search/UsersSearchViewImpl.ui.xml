@@ -18,7 +18,7 @@
 		        <b:TextBox ui:field="searchTerm" styleName="form-control input-sm" visibleLength="20" searchQuery="true" placeholder="{i18n.search_enterTerms}" />
 		    </span>
 	        <g:Button ui:field="searchButton" styleName="btn btn-default btn-sm" >
-	            <i class="icon-search"></i> <ui:text from="{i18n.button_search}" />
+	            <i class="fa fa-search"></i> <ui:text from="{i18n.button_search}" />
 	        </g:Button>
 	    </div>
     </form>	

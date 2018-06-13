@@ -82,15 +82,15 @@ ${'</#if>'}
 
     <div class="form-group">
         <button type="submit" class="btn btn-primary" id="save" name="save">
-            <i class="icon-ok icon-white"></i> ${'<@spring'}.message "button.save"/>
+            <i class="fa fa-check icon-white"></i> ${'<@spring'}.message "button.save"/>
         </button>
         ${'<#if'} ${pojoNameLower}.${idFieldName}?exists>
             <button type="submit" class="btn btn-danger" id="delete" name="delete">
-                <i class="icon-trash icon-white"></i> ${'<@spring'}.message "button.delete"/>
+                <i class="fa fa-trash icon-white"></i> ${'<@spring'}.message "button.delete"/>
             </button>
         ${'</#if>'}
         <a href="${'$'}{rc.contextPath}/${util.getPluralForWord(pojoNameLower)}" class="btn btn-default">
-            <i class="icon-remove"></i> ${'<@spring'}.message "button.cancel"/></a>
+            <i class="fa fa-times"></i> ${'<@spring'}.message "button.cancel"/></a>
     </div>
 </form>
 </div>

@@ -172,17 +172,17 @@
 </c:choose>
         <div class="form-group">
             <button type="submit" class="btn btn-primary" name="save" onclick="bCancel=false">
-                <i class="icon-ok icon-white"></i> <fmt:message key="button.save"/>
+                <i class="fa fa-check icon-white"></i> <fmt:message key="button.save"/>
             </button>
 
             <c:if test="${param.from == 'list' and param.method != 'Add'}">
               <button type="submit" class="btn btn-default" name="delete" onclick="bCancel=true;return confirmMessage(msgDelConfirm)">
-                  <i class="icon-trash"></i> <fmt:message key="button.delete"/>
+                  <i class="fa fa-trash"></i> <fmt:message key="button.delete"/>
               </button>
             </c:if>
 
             <button type="submit" class="btn btn-default" name="cancel" onclick="bCancel=true">
-                <i class="icon-remove"></i> <fmt:message key="button.cancel"/>
+                <i class="fa fa-times"></i> <fmt:message key="button.cancel"/>
             </button>
         </div>
     </form:form>

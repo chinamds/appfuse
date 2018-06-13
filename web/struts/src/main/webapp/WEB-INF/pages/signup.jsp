@@ -76,10 +76,10 @@
         </fieldset>
         <div id="actions" class="form-group form-actions">
             <s:submit type="button" cssClass="btn btn-primary" key="button.register" theme="simple">
-                <i class="icon-ok icon-white"></i>
+                <i class="fa fa-check icon-white"></i>
                 <fmt:message key="button.register"/>
             </s:submit>
-            <a href="./" class="btn btn-default"><i class="icon-remove"></i><fmt:message key="button.cancel"/></a>
+            <a href="./" class="btn btn-default"><i class="fa fa-times"></i><fmt:message key="button.cancel"/></a>
         </div>
     </s:form>
 </div>

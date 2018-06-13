@@ -17,15 +17,15 @@
     <span class="col-sm-9">
         <t:textfield size="20" name="q" t:id="q" placeholder="${'$'}{message:search.enterTerms}" class="form-control input-sm"/>
     </span>
-    <button type="submit" class="btn btn-default btn-sm"><i class="icon-search"></i> ${'$'}{message:button.search}</button>
+    <button type="submit" class="btn btn-default btn-sm"><i class="fa fa-search"></i> ${'$'}{message:button.search}</button>
 </div>
 </form>
 
 <p>${'$'}{message:${pojoNameLower}List.message}</p>
 
 <div id="actions" class="btn-group">
-    <a t:type="eventlink" event="add" id="add" class="btn btn-primary"><i class="icon-plus icon-white"></i> ${'$'}{message:button.add}</a>
-    <a t:type="eventlink" event="done" id="done" class="btn btn-default"><i class="icon-ok"></i> ${'$'}{message:button.done}</a>
+    <a t:type="eventlink" event="add" id="add" class="btn btn-primary"><i class="fa fa-plus icon-white"></i> ${'$'}{message:button.add}</a>
+    <a t:type="eventlink" event="done" id="done" class="btn btn-default"><i class="fa fa-check"></i> ${'$'}{message:button.done}</a>
 </div>
 
 <t:grid source="${util.getPluralForWord(pojoNameLower)}" row="${pojoNameLower}" id="${pojoNameLower}List" class="table table-condensed table-striped table-hover">

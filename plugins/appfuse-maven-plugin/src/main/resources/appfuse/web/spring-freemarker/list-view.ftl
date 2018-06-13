@@ -14,7 +14,7 @@
                placeholder="${'$'}{rc.getMessage("search.enterTerms")}" class="form-control input-sm"/>
     </span>
     <button id="button.search" class="btn btn-default btn-sm" type="submit">
-        <i class="icon-search"></i> ${'$'}{rc.getMessage("button.search")}
+        <i class="fa fa-search"></i> ${'$'}{rc.getMessage("button.search")}
     </button>
 </div>
 </form>
@@ -23,8 +23,8 @@
 
 <div id="actions" class="btn-group">
     <a href="${pojoNameLower}form" class="btn btn-primary">
-        <i class="icon-plus icon-white"></i> ${'$'}{rc.getMessage("button.add")}</a>
-    <a href="home" class="btn btn-default"><i class="icon-ok"></i> ${'$'}{rc.getMessage("button.done")}</a>
+        <i class="fa fa-plus icon-white"></i> ${'$'}{rc.getMessage("button.add")}</a>
+    <a href="home" class="btn btn-default"><i class="fa fa-check"></i> ${'$'}{rc.getMessage("button.done")}</a>
 </div>
 
 <table class="table table-condensed table-striped table-hover" id="${pojoNameLower}List">

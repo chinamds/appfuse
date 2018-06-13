@@ -13,7 +13,7 @@
 
     <div id="actions" class="form-group">
         <a class="btn btn-primary" href="${ctx}/home" >
-            <i class="icon-ok icon-white"></i> <fmt:message key="button.done"/>
+            <i class="fa fa-check icon-white"></i> <fmt:message key="button.done"/>
         </a>
     </div>
 

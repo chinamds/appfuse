@@ -39,10 +39,10 @@
         </div>
         <div class="form-group">
             <button type="submit" name="upload" class="btn btn-primary" onclick="bCancel=false">
-                <i class="icon-upload icon-white"></i> <fmt:message key="button.upload"/>
+                <i class="fa fa-upload icon-white"></i> <fmt:message key="button.upload"/>
             </button>
             <button type="submit" name="cancel" class="btn btn-default" onclick="bCancel=true">
-                <i class="icon-remove"></i> <fmt:message key="button.cancel"/>
+                <i class="fa fa-times"></i> <fmt:message key="button.cancel"/>
             </button>
         </div>
     </form:form>

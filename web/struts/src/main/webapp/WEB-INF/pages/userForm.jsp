@@ -152,18 +152,18 @@
         </c:choose>
         <div id="actions" class="form-group">
             <s:submit type="button" cssClass="btn btn-primary" method="save" key="button.save" theme="simple">
-                <i class="icon-ok icon-white"></i>
+                <i class="fa fa-check icon-white"></i>
                 <fmt:message key="button.save"/>
             </s:submit>
             <c:if test="${param.from == 'list' and not empty user.id}">
                 <s:submit type="button" cssClass="btn btn-danger" method="delete" key="button.delete"
                           onclick="return confirmMessage(msgDelConfirm)" theme="simple">
-                    <i class="icon-trash"></i>
+                    <i class="fa fa-trash"></i>
                     <fmt:message key="button.delete"/>
                 </s:submit>
             </c:if>
             <s:submit type="button" cssClass="btn btn-default" method="cancel" key="button.cancel" theme="simple">
-                <i class="icon-remove"></i>
+                <i class="fa fa-times"></i>
                 <fmt:message key="button.cancel"/>
             </s:submit>
         </div>

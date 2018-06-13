@@ -22,17 +22,17 @@
                    placeholder="<fmt:message key="search.enterTerms"/>" class="form-control input-sm">
         </span>
         <button id="button.search" class="btn btn-default btn-sm" type="submit">
-            <i class="icon-search"></i> <fmt:message key="button.search"/>
+            <i class="fa fa-search"></i> <fmt:message key="button.search"/>
         </button>
     </div>
     </form>
 
     <div id="actions" class="btn-group">
         <a class="btn btn-primary" href="<c:url value='/userform?method=Add&from=list'/>">
-            <i class="icon-plus icon-white"></i> <fmt:message key="button.add"/></a>
+            <i class="fa fa-plus icon-white"></i> <fmt:message key="button.add"/></a>
 
         <a class="btn btn-default" href="<c:url value='/home'/>">
-            <i class="icon-ok"></i> <fmt:message key="button.done"/></a>
+            <i class="fa fa-check"></i> <fmt:message key="button.done"/></a>
     </div>
 
     <display:table name="userList" cellspacing="0" cellpadding="0" requestURI=""
