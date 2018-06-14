@@ -284,12 +284,34 @@
             <artifactId>wro4j-core</artifactId>
         </dependency>
         <dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>jquery</artifactId>
+		    <version>3.2.1</version>
+		</dependency>
+        <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>jquery-cookie</artifactId>
         </dependency>
         <dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>jquery-migrate</artifactId>
+		    <version>1.4.1</version>
+		    <exclusions>
+	          <exclusion>
+	            <artifactId>jquery</artifactId>
+	            <groupId>org.webjars</groupId>
+	          </exclusion>
+	        </exclusions>
+		</dependency>
+        <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
+            <exclusions>
+	          <exclusion>
+	            <artifactId>jquery</artifactId>
+	            <groupId>org.webjars</groupId>
+	          </exclusion>
+	        </exclusions>
         </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
