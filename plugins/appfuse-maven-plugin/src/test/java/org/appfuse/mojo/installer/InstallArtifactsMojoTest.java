@@ -6,8 +6,8 @@ public class InstallArtifactsMojoTest extends AbstractAppFuseMojoTestCase {
 
     public void testCreateStrutsProject() throws Exception {
     	//todo struts archetype
-        //createTestProject("appfuse-basic-struts-archetype", "4.0.0-SNAPSHOT");
-    	//createTestProject("appfuse-basic-struts", "4.0.0-SNAPSHOT");
+        //createTestProject("appfuse-basic-struts-archetype", "4.0.0");
+    	//createTestProject("appfuse-basic-struts", "4.0.0");
         //assertTrue("can't find test-project's pom.xml", checkExists("target/test-project/pom.xml"));
     }
 }

@@ -7,7 +7,7 @@
     <artifactId>appfuse</artifactId>
     <packaging>pom</packaging>
     <name>AppFuse</name>
-    <version>4.0.0-SNAPSHOT</version>
+    <version>4.0.0</version>
     <inceptionYear>2003</inceptionYear>
     <description>
         AppFuse is a full-stack framework for building web applications on the JVM.
@@ -614,7 +614,7 @@
             </dependency>
             <dependency>
                 <groupId>javax.servlet.jsp</groupId>
-                <artifactId>jsp-api</artifactId>
+                <artifactId>javax.servlet.jsp-api</artifactId>
                 <version>${jsp.version}</version>
             </dependency>
             <dependency>
@@ -650,7 +650,7 @@
             </dependency>
             <dependency>
                 <groupId>javax.el</groupId>
-                <artifactId>el-api</artifactId>
+                <artifactId>javax.el-api</artifactId>
                 <version>${el.version}</version>
             </dependency>
             <dependency>
@@ -661,7 +661,7 @@
             <dependency>
                 <groupId>javax.xml.bind</groupId>
                 <artifactId>jaxb-api</artifactId>
-                <version>2.2.11</version>
+                <version>2.3.0</version>
             </dependency>
             <dependency>
                 <groupId>net.sourceforge.jsf-comp</groupId>
@@ -1389,7 +1389,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.4</version>
+                        <version>1.6</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
@@ -1449,7 +1449,7 @@
         <displaytag.version>1.2</displaytag.version>
         <dwr.version>2.0.10</dwr.version>
         <ehcache-web.version>2.0.4</ehcache-web.version>
-        <el.version>2.2</el.version>
+        <el.version>3.0.0</el.version>
         <fest.assert>1.4</fest.assert>
         <gin.version>2.1.2</gin.version>
         <gwt.version>2.7.0</gwt.version>
@@ -1459,13 +1459,13 @@
         <hibernate-validator.version>6.0.9.Final</hibernate-validator.version>
 		<!-- <hibernate-search-analyzers.version>4.5.3.Final</hibernate-search-analyzers.version> -->
         <java.version>1.8</java.version>
-        <javax-mail.version>1.4.1</javax-mail.version>
+        <javax-mail.version>1.4.7</javax-mail.version>
         <javax-validation.version>2.0.1.Final</javax-validation.version>
         <jboss-logging.version>3.3.2.Final</jboss-logging.version>
         <jetty.version>9.4.10.v20180503</jetty.version>
         <jpa.version>2.1</jpa.version>
         <json.version>20180130</json.version>
-        <jsp.version>2.1</jsp.version>
+        <jsp.version>2.3.1</jsp.version>
         <jquery-cookie.version>1.4.1-1</jquery-cookie.version>
         <junit.version>4.12</junit.version>
         <omnifaces.version>1.8.1</omnifaces.version>
