@@ -218,8 +218,8 @@
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>commons-dbcp</groupId>
-            <artifactId>commons-dbcp</artifactId>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
         </dependency>
         <dependency>
             <groupId>org.subethamail</groupId>
@@ -322,8 +322,8 @@
             <artifactId>bootstrap-datepicker</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>bootswatch-spacelab</artifactId>
+            <groupId>org.webjars.bowergithub.thomaspark</groupId>
+            <artifactId>bootswatch</artifactId>
         </dependency>
         <dependency>
 		    <groupId>org.webjars</groupId>

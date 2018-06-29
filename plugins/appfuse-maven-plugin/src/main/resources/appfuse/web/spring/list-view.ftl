@@ -13,6 +13,8 @@
     </div>
 </c:if>
 
+<div class="col">
+
 <h2><fmt:message key="${pojoNameLower}List.heading"/></h2>
 
 <form method="get" action="${'$'}{ctx}/${util.getPluralForWord(pojoNameLower)}" id="searchForm" class="form-inline">
@@ -63,3 +65,5 @@
     <display:setProperty name="export.csv.filename"><fmt:message key="${pojoNameLower}List.title"/>.csv</display:setProperty>
     <display:setProperty name="export.pdf.filename"><fmt:message key="${pojoNameLower}List.title"/>.pdf</display:setProperty>
 </display:table>
+
+</div>

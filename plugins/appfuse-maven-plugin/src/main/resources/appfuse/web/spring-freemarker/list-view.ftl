@@ -5,6 +5,8 @@
     <meta name="menu" content="${pojo.shortName}Menu"/>
 </head>
 
+<div class="col">
+
 <h2>${'$'}{rc.getMessage("${pojoNameLower}List.title")}</h2>
 
 <form method="get" action="${'$'}{rc.contextPath}/${util.getPluralForWord(pojoNameLower)}" id="searchForm" class="form-inline">
@@ -55,3 +57,5 @@
     ${'</#list>'}
     </tbody>
 </table>
+
+</div>

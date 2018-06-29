@@ -6,6 +6,8 @@
 </head>
 <body id="login">
 
+<div class="col">
+
 <form method="post" id="loginForm" action="<c:url value='/j_security_check'/>"
     onsubmit="saveUsername(this);return validateForm(this)" class="form-signin" autocomplete="off">
     <security:csrfInput />
@@ -46,5 +48,7 @@
 <p><fmt:message key="login.passwordHint"/></p>
 
 <p><fmt:message key="updatePassword.requestRecoveryTokenLink"/></p>
+
+</div>
 
 </body>
