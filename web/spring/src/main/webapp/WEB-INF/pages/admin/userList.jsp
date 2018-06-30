@@ -15,15 +15,15 @@
 <div class="col-sm-10">
     <h2><fmt:message key="userList.heading"/></h2>
 
-    <form method="get" action="${ctx}/admin/users" id="searchForm" class="form-inline">
-    <div id="search" class="text-right">
-        <span class="col-sm-9">
-            <input type="text" size="20" name="q" id="query" value="${param.q}"
-                   placeholder="<fmt:message key="search.enterTerms"/>" class="form-control input-sm">
+    <form method="get" action="${ctx}/admin/users" id="searchForm" class="form-inline float-right">
+    <div id="search" class="input-group">
+        <input type="text" size="20" name="q" id="query" value="${param.q}"
+               placeholder="<fmt:message key="search.enterTerms"/>" class="form-control input-sm">
+        <span class="input-group-append">
+	        <button id="button.search" class="btn btn-default btn-sm" type="submit">
+	            <i class="fa fa-search"></i> <fmt:message key="button.search"/>
+	        </button>
         </span>
-        <button id="button.search" class="btn btn-default btn-sm" type="submit">
-            <i class="fa fa-search"></i> <fmt:message key="button.search"/>
-        </button>
     </div>
     </form>
 

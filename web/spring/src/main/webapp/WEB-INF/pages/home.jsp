@@ -6,6 +6,8 @@
 </head>
 <body class="home">
 
+<div class="col">
+
 <h2><fmt:message key="home.heading"/></h2>
 <p><fmt:message key="home.message"/></p>
 
@@ -17,4 +19,7 @@
         <a href="<c:url value='/fileupload'/>"><fmt:message key="menu.selectFile"/></a>
     </li>
 </ul>
+
+</div>
+
 </body>

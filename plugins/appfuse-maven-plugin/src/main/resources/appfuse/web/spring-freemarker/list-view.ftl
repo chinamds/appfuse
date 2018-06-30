@@ -9,15 +9,15 @@
 
 <h2>${'$'}{rc.getMessage("${pojoNameLower}List.title")}</h2>
 
-<form method="get" action="${'$'}{rc.contextPath}/${util.getPluralForWord(pojoNameLower)}" id="searchForm" class="form-inline">
-<div id="search" class="text-right">
-    <span class="col-sm-9">
-        <input type="text" size="20" name="q" id="query" value="${'$'}{RequestParameters.q!''}"
-               placeholder="${'$'}{rc.getMessage("search.enterTerms")}" class="form-control input-sm"/>
+<form method="get" action="${'$'}{rc.contextPath}/${util.getPluralForWord(pojoNameLower)}" id="searchForm" class="form-inline float-right">
+<div id="search" class="input-group">
+    <input type="text" size="20" name="q" id="query" value="${'$'}{RequestParameters.q!''}"
+           placeholder="${'$'}{rc.getMessage("search.enterTerms")}" class="form-control input-sm"/>
+    <span class="input-group-append">
+	    <button id="button.search" class="btn btn-default btn-sm" type="submit">
+	        <i class="fa fa-search"></i> ${'$'}{rc.getMessage("button.search")}
+	    </button>
     </span>
-    <button id="button.search" class="btn btn-default btn-sm" type="submit">
-        <i class="fa fa-search"></i> ${'$'}{rc.getMessage("button.search")}
-    </button>
 </div>
 </form>
 

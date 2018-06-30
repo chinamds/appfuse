@@ -4,8 +4,8 @@
 <div class="collapse navbar-collapse" id="navbar">
 <ul class="nav navbar-nav">
     <c:if test="${empty pageContext.request.remoteUser}">
-        <li class="active">
-            <a href="<c:url value="/login"/>"><fmt:message key="login.title"/></a>
+        <li class="nav-item active">
+            <a class="nav-link" href="<c:url value="/login"/>"><fmt:message key="login.title"/></a>
         </li>
     </c:if>
     <menu:displayMenu name="Home"/>

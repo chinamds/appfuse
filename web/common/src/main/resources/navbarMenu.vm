@@ -7,8 +7,8 @@
 
     ## create a single menu item
     #if ($menu.components.size() == 0)
-        <li class="#if ($menu.name == $currentMenu)active#end">
-        <a href="$url" title="$title" #if($menu.target)target="$menu.target" #end#if($menu.width)style="width: ${menu.width}px"#end>${title}</a>
+        <li class="nav-item #if ($menu.name == $currentMenu)active#end">
+        <a class="nav-link dropdown-item" href="$url" title="$title" #if($menu.target)target="$menu.target" #end#if($menu.width)style="width: ${menu.width}px"#end>${title}</a>
     #else ## create multiple menu items in a menu
         #if ($menu.components.size() > 0)
             #set ($hasViewableChildren = false)
@@ -21,11 +21,11 @@
             #end
         #end
 
-        <li#if ($hasViewableChildren) class="dropdown#if ($menu.name == $currentMenu) active#end"#end>
+        <li#if ($hasViewableChildren) class="nav-item dropdown#if ($menu.name == $currentMenu) active#end"#end>
           <a href="#" title="$title"
              #if($menu.target)target="$menu.target" #end
              #if($menu.width)style="width: ${menu.width}px"#end
-             class="dropdown-toggle" data-toggle="dropdown">${title}</a>
+             class="nav-link dropdown-item dropdown-toggle" data-toggle="dropdown">${title}</a>
     #end
 
     #if ($menu.components.size() > 0)
