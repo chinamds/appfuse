@@ -1,4 +1,4 @@
-#macro( displayNavbarMenu $menu $count)
+#macro( displayNavbarMenu $menu $count $dropdownmenu)
   #if ($displayer.isAllowed($menu))
     #set ($count = $count + 1)
     ## set menu title
@@ -7,8 +7,12 @@
 
     ## create a single menu item
     #if ($menu.components.size() == 0)
-        <li class="nav-item #if ($menu.name == $currentMenu)active#end">
-        <a class="nav-link dropdown-item" href="$url" title="$title" #if($menu.target)target="$menu.target" #end#if($menu.width)style="width: ${menu.width}px"#end>${title}</a>
+    	#if ($dropdownmenu)
+    		<a class="dropdown-item" href="$url" title="$title" #if($menu.target)target="$menu.target" #end#if($menu.width)style="width: ${menu.width}px"#end>${title}</a>
+    	#else
+	        <li class="nav-item #if ($menu.name == $currentMenu)active#end">
+	        <a class="nav-link" href="$url" title="$title" #if($menu.target)target="$menu.target" #end#if($menu.width)style="width: ${menu.width}px"#end>${title}</a>
+        #end
     #else ## create multiple menu items in a menu
         #if ($menu.components.size() > 0)
             #set ($hasViewableChildren = false)
@@ -25,17 +29,17 @@
           <a href="#" title="$title"
              #if($menu.target)target="$menu.target" #end
              #if($menu.width)style="width: ${menu.width}px"#end
-             class="nav-link dropdown-item dropdown-toggle" data-toggle="dropdown">${title}</a>
+             class="nav-link dropdown-toggle" id="$menu.name" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${title}</a>
     #end
 
     #if ($menu.components.size() > 0)
         #if ($hasViewableChildren)
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" aria-labelledby="$menu.name">
         #end
 
         #set ($count = 0)
         #foreach ($menuIt in $menu.components)
-            #displayNavbarMenu($menuIt, $count)
+            #displayNavbarMenu($menuIt, $count, true)
         #end
 
         #if ($hasViewableChildren && ($count == $renderedChildren))
@@ -47,7 +51,9 @@
           #end
         #end
     #else
-      </li>
+      #if ($dropdownmenu == false)
+      	</li>
+      #end
       #if ($menu.parent && $count == $menu.parent.components.size())
       </ul>
       #end
@@ -55,4 +61,4 @@
   #end
 #end
 
-#displayNavbarMenu($menu, 0)
+#displayNavbarMenu($menu, 0, false)
