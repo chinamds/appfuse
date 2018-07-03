@@ -962,6 +962,12 @@
                 <groupId>org.webjars.bowergithub.thomaspark</groupId>
                 <artifactId>bootswatch</artifactId>
                 <version>${bootswatch.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.webjars.bowergithub.twbs</groupId>
+                        <artifactId>bootstrap</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
 			    <groupId>org.webjars</groupId>
